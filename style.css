@@ -1,3 +1,97 @@
-strong {
-    
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+* {
+    box-sizing: border-box;
+}
+header {
+    border: 1px solid rgb(3, 3, 3);
+    background-color: #F2D4BC;
+}
+main {
+    border: 1px solid blue;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+footer {
+    border: 1px solid green;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+}
+.section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+.section-item a:hover {
+    color: #4d2323;
+}
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+}
+.section {
+    width: 50%;
+}
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+}
+@media (max-width: 768px) {   /* при уменьшении ширины экрана до 768px, секция будет занимать всю ширину*/
+    .section {
+      width: 100%;
+    }
+}
+.link {  /* ссылки (пока не использую)*/
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+.link:hover { /* ссылки (пока не использую)*/
+    color: #5d7260;
+}
+.nav-link {
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #303F3C;
+}
+.section-foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+    filter: grayscale(0.2) brightness(1.05);
+    transition: .3s;
 }
