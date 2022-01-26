@@ -1,4 +1,4 @@
-body {
+body {  /* использую */
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     margin: 0; 
@@ -7,31 +7,36 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-html {
+html { /* использую */
     scroll-behavior: smooth; 
-  }
-* {
+}
+* { /* использую */
     box-sizing: border-box;
 }
-header {
-    border: 1px solid rgb(3, 3, 3);
+header { /* использую */
     background-color: #F2D4BC;
 }
-main {
-    border: 1px solid blue;
-}
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-footer {
-    border: 1px solid green;
-}
-.container {
-    max-width: 1440px;
+.main { /* использую */
+    margin-bottom: auto;
+    max-width: 1024px;
     margin: 0 auto;
 }
-.nav-list {
+footer{ /* использую */
+    background-color: #F2D4BC;
+    padding: 20px;
+}
+.container { /* использую */
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+    padding: 20px;
+}
+.main-container { /* использую */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+.nav-list { /* использую */ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,45 +45,7 @@ footer {
     line-height: 50px;
     transition: .3s;
 }
-.section-item a {
-    color: #829985;
-    text-decoration: none;  
-    transition: color 0.5s;
-}
-.section-item a:hover {
-    color: #4d2323;
-}
-.section-title {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #829985;
-}
-.section {
-    width: 50%;
-}
-.section-profile {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 50px 30px 35px;
-    border-bottom: 15px solid #d7d1c9;
-}
-@media (max-width: 768px) {   /* при уменьшении ширины экрана до 768px, секция будет занимать всю ширину*/
-    .section {
-      width: 100%;
-    }
-}
-.link {  /* ссылки (пока не использую)*/
-    text-decoration: none;
-    color: #829985;
-    transition: color 0.5s;
-  }
-.link:hover { /* ссылки (пока не использую)*/
-    color: #5d7260;
-}
-.nav-link {
+.nav-link { /* использую */ 
     position: relative;
     padding: 0 12px;
     text-decoration: none;
@@ -87,7 +54,45 @@ footer {
     line-height: 50px;
     color: #303F3C;
 }
-.section-foto {
+.section-item :hover {  /* делает анимацию в белый цвет*/
+    color: #ffffff;
+    transition: color 0,6s; 
+    text-decoration: none; 
+} 
+.main-section-title { /* имя фамилия*/
+    margin: inherit;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #303F3C;
+}
+.section-title {  /* основной текст*/
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #303F3C;
+}
+.main-section-title-outside { /*под именем*/
+    margin-top: 20px;
+    color: #303F3C;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: inherit;
+}
+.section { /*секции в МАИН*/
+    width: 50%;
+}
+.section-profile { /*секции в МАИН*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 30px 20px;
+    border-bottom: 9px solid #F5F5EF;
+}
+.section-foto { /* использую */ 
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -95,3 +100,41 @@ footer {
     filter: grayscale(0.2) brightness(1.05);
     transition: .3s;
 }
+.section-profile-title {   /* использую DIV перед Именем*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    text-align: end;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {   /* при уменьшении ширины экрана до 768px, секция будет занимать всю ширину*/
+    .section {
+      width: 100%;  
+    }
+}
+/* .link {  ссылки (пока не использую)
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+.link:hover {  ссылки (пока не использую)
+    color: #5d7260;
+} */
+/* .nav-link::after {  НЕ использую (анимация) 
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: .5s;
+}  */  
+
+/* .section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s; 
+} */
