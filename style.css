@@ -73,6 +73,7 @@ footer{ /* использую */
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #303F3C;
+    text-indent: 20px;
 }
 .main-section-title-outside { /*под именем*/
     margin-top: 20px;
@@ -84,6 +85,9 @@ footer{ /* использую */
 }
 .section { /*секции в МАИН*/
     width: 50%;
+    padding: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #F2D4BC;
 }
 .section-profile { /*секции в МАИН*/
     display: flex;
@@ -112,6 +116,38 @@ footer{ /* использую */
     .section {
       width: 100%;  
     }
+}
+p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+.section-list {  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.section-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 30px;
+}
+.contacts-item:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+pre { /* для отображения кода*/
+    padding: 0;
+    margin: 0;
+}
+code {
+    font-family: monospace;
 }
 /* .link {  ссылки (пока не использую)
     text-decoration: none;
