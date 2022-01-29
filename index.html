@@ -15,12 +15,12 @@
         <div class="header">
             <nav class="nav">
                 <ul class="nav-list">
-                  <li class="nav-item section-item"><a href="#about" class="nav-link">About Me</a></li>
-                  <li class="nav-item section-item"><a href="#education" class="nav-link">Education</a></li>
-                  <li class="nav-item section-item"><a href="#skills" class="nav-link">Skills</a></li>
-                  <li class="nav-item section-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                  <li class="nav-item section-item"><a href="#code" class="nav-link">Code</a></li>
-                  <li class="nav-item section-item"><a href="#english" class="nav-link">English</a></li>
+                  <li class="section-item"><a href="#about" class="nav-link">About Me</a></li>
+                  <li class="section-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="section-item"><a href="#project" class="nav-link">Project</a></li>
+                  <li class="section-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="section-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="section-item"><a href="#english" class="nav-link">English</a></li>
                 </ul>
               </nav>
         </div>
@@ -46,29 +46,28 @@
                 <h2 class="section-title">Education</h2>
                 <p>Samara University</p>
             </section>
-            <section class="section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <p>I like programming. It is fascinating and interesting. I have a main job, programming is a hobby for me. I have completed several training projects and now I would like to take part in the creation of a real JavaScript project. My goal is to learn a pure JavaScript at a good level and learn the React library. I will be glad to join the creation of open source projects. I would like to work under the guidance of an experienced developer to gain practical experience.</p>
+            <section class="section" id="project">
+                <h2 class="section-title">Project</h2>
+                <p>Нou look at him</p>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="pre">
+  <code>function factorial(a) {
+  if(a < 0) return null;
+  if (a <= 1) return 1;
+  return a * factorial(a-1);
+  }</code>
+                </pre>
             </section>
             <section class="section" id="contacts">
                 <h2 class="section-title">Contacts</h2>
                 <ul class="section-list">
                     <li>Samara, Russia</li>
-                    <li>Email:  </li>
-                    <li>Github: </li>
-                    <li>Telegram:</li>
-                    <li>Discord: </li>
+                    <li class="section-item">Email: <a href="mailto:vik-ilikeev@yandex.ru" class="nav-link">vik-ilikeev@yandex.ru</a></li>
+                    <li class="section-item">Github: <a href="https://github.com/11mover11" class="nav-link">11mover11</a></li>
+                    <li class="section-item">Telegram: <a href="https://t.me/VikIlikeev" class="nav-link">@VikIlikeev</a></li>
                 </ul>
-            </section>
-            <section class="section" id="code">
-                <h2 class="section-title">Code</h2>
-                <pre class="pre">
-<code>function factorial(a) {
-if(a < 0) return null;
-if (a <= 1) return 1;
-return a * factorial(a-1);
-}</code>
-                </pre>
             </section>
             <section class="section" id="english">
                 <h2 class="section-title">English</h2>
@@ -77,8 +76,9 @@ return a * factorial(a-1);
         </div>
     </main>
     <footer>
-        <div class="container">
-        <div>2022</div>
+        <div class="container footer-container">
+        <div class="section-item">2022 <a href="https://github.com/11mover11" class="nav-link">11mover11</a></div>
+        <a href="https://rs.school/js/" class="logo"></a>
         </div>
 
     </footer>
