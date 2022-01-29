@@ -1,3 +1,202 @@
-strong {
+body {  /* использую */
+    background-image: url(assets/fonts/Кремовый\ и\ Зеленый\ Творческий\ Резюме.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+html { /* использую */
+    scroll-behavior: smooth; 
+}
+* { /* использую */
+    box-sizing: border-box;
+}
+header { /* использую */
+    background-color: #F2D4BC;
+}
+.main { /* использую */
+    margin-bottom: auto;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+footer { /* использую */
+    background-color: #F2D4BC;
+    padding: 20px;
     
 }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.container { /* использую */
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+    padding: 20px;
+}
+.main-container { /* использую */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+.nav-list { /* использую */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+    
+}
+.nav-link { /* использую */ 
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #303F3C;
+}
+.section-item :hover {  /* делает анимацию в белый цвет*/
+    color: #ffffff;
+    transition: 0,6s; 
+    text-decoration: none; 
+} 
+.main-section-title { /* имя фамилия*/
+    margin: inherit;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #303F3C;
+}
+.section-title {  /* основной текст*/
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #303F3C;
+    text-indent: 20px;
+}
+.main-section-title-outside { /*под именем*/
+    margin-top: 20px;
+    color: #303F3C;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: inherit;
+}
+.section { /*секции в МАИН*/
+    width: 50%;
+    padding: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #F2D4BC;
+}
+.section-profile { /*секции в МАИН*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 30px 20px;
+    border-bottom: 9px solid #F5F5EF;
+}
+.section-foto { /* использую */ 
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+    filter: grayscale(0.2) brightness(1.05);
+    border: none; /* Параметры рамки */
+    position: relative; /* Относительное позиционирование */
+    transition: 0.5s; /* Время анимации */
+}
+.section-foto:hover {
+    z-index: 10; /* Поверх всех картинок */
+    transform: scale(1.1); /* Масштабирование */
+   }
+.section-profile-title {   /* использую DIV перед Именем*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    text-align: end;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {   /* при уменьшении ширины экрана до 768px, секция будет занимать всю ширину*/
+    .section {
+      width: 100%;  
+    }
+}
+p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+.section-list {  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-indent: 20px
+}
+.logo {
+    width: 121px;
+    height: 45px;
+    background-image: url(assets/svg/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* .section-item { 
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 30px; 
+} */
+/* .contacts-item:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+pre { /* для отображения кода*/
+    padding: 0;
+    margin: 0;
+}
+code {
+    font-family: monospace;
+}
+.link { 
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+.link:hover { 
+    color: #5d7260;
+} 
+/* .nav-link::after {  НЕ использую (анимация) 
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: .5s;
+}  */  
+
+/* .section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s; 
+} */
